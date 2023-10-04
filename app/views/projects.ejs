@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      main {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+c
+      .mission-statement {
+        margin-top: 20px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 0px #00000033;
+      }
+      
+      .mission-statement h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      
+      .mission-statement p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        text-align: justify;
+      }
+      .jumbotron {
+    padding: 20px;
+}
+p {
+    margin-top: 16px;    
+    margin-bottom: 16px; 
+    padding-left: 16px;  
+    padding-right: 16px; 
+}
+.sentence {
+    display: block; 
+    margin-bottom: 10px; 
+}
+      </style> 
+</head>
+
+<body>
+    <!-- Header -->
+    <%- include('./partials/Header.ejs') %>
+
+    
+    <%- include('./partials/Main_nav.ejs', {active: 'Home'}) %>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="jumbotron">
+          <body>
+            <h2>Project 1</h2>
+            <p>Web application development</p>
+            <img src="/img/logo2.png">
+            <p class="sentence">"I am working on my first project using Yarn, MongoDB, and React to showcase front-end and back-end technologies."</p>
+            <p class="sentence">"This project is an exciting opportunity to demonstrate my skills and create something meaningful."</p>
+            <p class="sentence">"I'm looking forward to learning and growing through this experience."</p>
+            <p class="sentence">"It's a great way to apply what I've learned about web development."</p>
+            <p class="sentence">"I hope this project will be a valuable addition to my portfolio."</p>
+            <p class="sentence">"Stay tuned for updates as I make progress on this project!"</p>
+          </main>
+   <!-- Footer -->
+   <%- include('./partials/Footer.ejs') %>
+   
+  
+
+ 
+
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Additional Scripts if Needed -->
+</body>
+
+</html>

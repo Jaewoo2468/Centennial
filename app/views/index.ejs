@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      main {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+      .mission-statement {
+        margin-top: 20px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 0px #00000033;
+      }
+      
+      .mission-statement h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      
+      .mission-statement p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        text-align: justify;
+      }
+      .jumbotron {
+    padding: 20px;
+}
+p {
+    margin-top: 16px;    
+    margin-bottom: 16px; 
+    padding-left: 16px;  
+    padding-right: 16px; 
+}
+.sentence {
+    display: block; 
+    margin-bottom: 10px; 
+}
+      </style> 
+</head>
+
+<body>
+    <!-- Header -->
+    <%- include('./partials/Header.ejs') %>
+
+    
+    <%- include('./partials/Main_nav.ejs', {active: 'Home'}) %>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to <%= title %> Page!</h1>
+            <h2>Mission Statement</h2>
+            <p class="mission-statement.">
+              <span class="sentence">Hi. My name is Jaewoo Yi from south korea. Now I'm in CA for learning Software technology at Centennial college.</span> 
+              <span class="sentence">I am a diligent student currently engrossed in the vast and dynamic 
+              field of software engineering,
+               a domain where innovation intertwines with resolve to shape the contours of the future. </span>
+               <span class="sentence">My journey in this field is fueled by a passionate curiosity and a profound desire to harness
+                 the boundless possibilities of technology to address the multifaceted challenges our world faces.</span>
+                 <span class="sentence">I am committed to immersing myself in learning and honing my skills, 
+                  with the aspiration to emerge as a proficient software engineer capable of crafting solutions that are both transformative 
+                  and sustainable.</span>
+                  <span class="sentence">I envision a future where I can leverage my technical acumen and innovative spirit to 
+                    contribute to the creation of impactful software solutions, ones that not only drive progress but also embody the
+                     principles of empathy and inclusivity. My ambition is to be at the forefront of technology, pushing the boundaries 
+                     of what is possible and fostering a positive change in society through the power of software engineering.</span>
+                     <span class="sentence"> I seek to blend technical excellence with ethical responsibility to navigate the journey ahead, 
+                      driven by a relentless pursuit of knowledge and a deep sense of purpose to make a meaningful difference in the world."</span>
+                      <span class="sentence"> I'm trying hard to learning english and computer skills for be the good engineer at the field, and also
+                        have a global citizenship which have no discrimination for anything.
+                      </span>
+              </p>
+        </div>
+    </main>
+   <!-- Footer -->
+   <%- include('./partials/Footer.ejs') %>
+   
+  
+
+ 
+
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Additional Scripts if Needed -->
+</body>
+
+</html>

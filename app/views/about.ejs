@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .profile {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: 300px;
+    vertical-align: top; 
+}    main {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+      .mission-statement {
+        margin-top: 20px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 0px #00000033;
+      }
+      
+      .mission-statement h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      
+      .mission-statement p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        text-align: justify;
+      }
+      .jumbotron {
+    padding: 20px;
+}
+p {
+    margin-top: 16px;    
+    margin-bottom: 16px; 
+    padding-left: 16px;  
+    padding-right: 16px; 
+}
+.sentence {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <%- include('./partials/Header.ejs') %>
+
+    <!-- Navigation -->
+    <%- include('./partials/Main_nav.ejs', {active: 'About'}) %>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="jumbotron">
+          <img src="/img/profile.jpg" class="profile">
+           <span class="sentence">I am a 27-year-old male from Korea</span>
+           <span class="sentence"> In my early twenties, I was a trainee professional gamer. </span>
+           <span class="sentence">After completing my military service, I dropped out of a university in Korea and am currently studying software engineering at Centennial College in Toronto. </span>
+           <span class="sentence">hrough various experiences in the military and work experiences in Korea, I have developed great patience and am prepared to approach any situation positively</span>
+           <a href="/img/resume.pdf" class="download-button">looking resume</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include('./partials/Footer.ejs') %>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

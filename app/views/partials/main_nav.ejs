@@ -1,0 +1,79 @@
+<nav class="navbar">
+            <img src="/img/logo.png" alt="Description" class="navbar-img"></a>
+        </div>
+        <ul class="nav-list">
+            <% function renderNavItem(path, label) { %>
+                <li class="nav-item <%= title === label ? 'current' : 'not' %> border">
+                    <a href="<%= path %>"><%= label %></a>
+                </li>
+                    
+                <% } %>
+                <% renderNavItem('/', 'Home', 'fas fa-lg fa-laptop-house') %>
+                <% renderNavItem('/about', 'About', 'fa-solid fa-address-card') %>
+                <% renderNavItem('/contact', 'Contact', 'fa-solid fa-address-book') %>
+                <% renderNavItem('/projects', 'Project', 'fa-brands fa-project-diagram') %>
+                <% renderNavItem('/services', 'Services', 'fa-brands fa-servicestack') %>
+            </ul>
+            <div class="comment">
+                Welcome to Jaewoo Yi's Page
+            </div>
+        </div>
+    </div>
+</nav>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #6499E9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items horizontally */
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px; /* or any other size you prefer */
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    border-right: 1px solid #ffffff;
+}
+
+.nav-item:last-child {
+    border-right: none;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.current {
+    background-color: #4CAF50;
+}
+
+.nav-item a:hover {
+    background-color: #f56702;
+}
+
+.comment {
+    color: #fff;
+    margin-left: auto; /* Push the comment to the right */
+    padding-left: 20px; /* Optional: for some spacing */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 40px;
+}
+
+</style>
